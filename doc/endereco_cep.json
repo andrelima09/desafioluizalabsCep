@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6165ee2d105d7c348b8e4622"
+  },
+  "cep": "12605590",
+  "rua": "Rodovia Osvaldo Junqueira Ortiz Monteiro",
+  "bairro": "Parque das Rodovias",
+  "cidade": "Lorena",
+  "estado": "São Paulo"
+},{
+  "_id": {
+    "$oid": "6165ee69105d7c348b8e4623"
+  },
+  "cep": "37502256",
+  "rua": "Rua Carlos Galvão",
+  "bairro": "Jardim Eldorado",
+  "cidade": "Itajubá",
+  "estado": "Minas Gerais"
+},{
+  "_id": {
+    "$oid": "6165eeae105d7c348b8e4624"
+  },
+  "cep": "37500000",
+  "rua": "Rua Carlos Galvão2",
+  "bairro": "Jardim Eldorado2",
+  "cidade": "Itajubá2",
+  "estado": "Minas Gerais2"
+},{
+  "_id": {
+    "$oid": "6165eed9105d7c348b8e4625"
+  },
+  "cep": "10000000",
+  "rua": "Rodovia central",
+  "bairro": "Centro",
+  "cidade": "Lorena",
+  "estado": "São Paulo"
+}]

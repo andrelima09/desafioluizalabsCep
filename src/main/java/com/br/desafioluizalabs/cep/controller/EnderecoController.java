@@ -5,7 +5,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.br.desafioluizalabs.cep.dto.ResponseDto;
@@ -30,7 +29,7 @@ public class EnderecoController {
 			@ApiResponse(code = 500, message = "Erro interno da aplicação."),
 			@ApiResponse(code = 400, message = "Cep inválido.")})
 	@GetMapping("/{cep}")
-	public @ResponseBody ResponseEntity<ResponseDto> buscaEnderecoPorCep(@PathVariable String cep) {
+	public ResponseEntity<ResponseDto> buscaEnderecoPorCep(@PathVariable String cep) {
 		ResponseDto response = enderecoService.buscaEnderecoPorCep(cep);
 		return new ResponseEntity<>(response, response.getStatus());
 	}

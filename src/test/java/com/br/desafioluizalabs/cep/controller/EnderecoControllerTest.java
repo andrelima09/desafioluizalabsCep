@@ -44,7 +44,7 @@ class EnderecoControllerTest {
 	}
 	
 	@Test
-	void deveretornarStatusErroInterno_buscarEndereco() {
+	void deveRetornarStatusErroInterno_buscarEndereco() {
 		String cep = "12605-590";
 		when(this.enderecoService.buscaEnderecoPorCep(cep)).thenReturn(MockDados.responseDtoErroInterno());
 		given().accept(ContentType.JSON).when().get("/endereco/"+cep).then().statusCode(HttpStatus.INTERNAL_SERVER_ERROR.value());

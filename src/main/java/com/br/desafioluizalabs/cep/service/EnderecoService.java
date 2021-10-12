@@ -16,10 +16,6 @@ public class EnderecoService {
 	@Autowired
 	private EnderecoRepository enderecoRepository;
 	
-	public Endereco inserirEndereco(Endereco endereco) {
-		return enderecoRepository.save(endereco);
-	}
-	
 	public ResponseDto buscaEnderecoPorCep(String cep) {
 		ResponseDto response = new ResponseDto();
 		cep = cep != null ? cep.replaceAll("[^0-9]", "") : null;
